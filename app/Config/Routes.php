@@ -37,6 +37,9 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'BarangController::index');
 $routes->get('/details/(:num)', 'BarangController::details/$1');
+$routes->get('/checkout', 'BarangController::checkout');
+$routes->get('/checkout/success', 'BarangController::checkout_success');
+$routes->post('/checkout/store', 'BarangController::checkout_store');
 $routes->post('/details/(:num)/add-to-chart', 'BarangController::addToChart/$1');
 $routes->get('/chart/delete/(:num)', 'BarangController::deleteChart/$1');
 

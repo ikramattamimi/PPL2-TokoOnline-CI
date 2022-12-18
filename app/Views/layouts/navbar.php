@@ -46,7 +46,10 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton1">
                         <li>
-                            <h6 class="ms-2">Keranjang(<?= count(array_filter($chart)) ?>)</h6>
+                            <div class="d-flex align-items-center justify-content-between me-3">
+                                <h6 class="ms-2">Keranjang(<?= count(array_filter($chart)) ?>)</h6>
+                                <a href="/checkout">Checkout</a>
+                            </div>
                         </li>
                         <?php foreach ($chart as $item) : ?>
                             <?php if ($item != null) { ?>

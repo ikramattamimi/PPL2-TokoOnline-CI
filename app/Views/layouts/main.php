@@ -74,6 +74,7 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Script -->
     <script src="<?= base_url('assets/js/jquery-1.11.0.min.js') ?>"></script>
     <script src="<?= base_url('assets/js/jquery-migrate-1.2.1.min.js') ?>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
     <script src="<?= base_url('assets/js/templatemo.js') ?>"></script>
     <script src="<?= base_url('assets/js/custom.js') ?>"></script>
