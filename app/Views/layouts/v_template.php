@@ -47,7 +47,7 @@ https://templatemo.com/tm-559-zay-shop
     </nav>
     <!-- Close Top Nav -->
 
-    <?= $this->include('layouts/navbar') ?>
+    <?= $this->include('layouts/v_navbar') ?>
 
 
     <!-- Modal -->
@@ -69,7 +69,7 @@ https://templatemo.com/tm-559-zay-shop
 
     <?= $this->renderSection('content') ?>
 
-    <?= $this->include('layouts/footer') ?>
+    <?= $this->include('layouts/v_footer') ?>
 
     <!-- Start Script -->
     <script src="<?= base_url('assets/js/jquery-1.11.0.min.js') ?>"></script>

@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Barang_model extends Model
+class m_barang extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'barang';

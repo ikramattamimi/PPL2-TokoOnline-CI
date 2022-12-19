@@ -1,4 +1,4 @@
-<?= $this->extend('layouts/main') ?>
+<?= $this->extend('layouts/v_template') ?>
 
 <?= $this->section('content') ?>
 <section class="bg-light">
@@ -45,7 +45,7 @@
                         <h6>Atur jumlah dan catatan</h6>
                     </div>
 
-                    <form action="/details/<?= $barang['id'] ?>/add-to-chart" method="post">
+                    <form action="/details/<?= $barang['id'] ?>/add-to-chartt" method="post">
                         <?php csrf_token() ?>
                         <div class="card-body">
                             <div class="row d-flex align-items-center">
@@ -66,7 +66,7 @@
                                         harga = <?= $barang['harga'] ?>
                                     </script>
                                     <p class="text-end">Rp<span id="jumlah"><?= number_format($barang['harga'], 0, ',', '.') ?></span></p>
-                                    <input type="text" id="total_harga" name="total_harga" value="<?= $barang['harga'] ?>" hidden/>
+                                    <input type="text" id="total_harga" name="total_harga" value="<?= $barang['harga'] ?>" hidden />
                                 </div>
                             </div>
 

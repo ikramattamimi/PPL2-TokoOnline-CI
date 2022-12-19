@@ -35,13 +35,21 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'BarangController::index');
-$routes->get('/details/(:num)', 'BarangController::details/$1');
-$routes->get('/checkout', 'BarangController::checkout');
-$routes->get('/checkout/success', 'BarangController::checkout_success');
-$routes->post('/checkout/store', 'BarangController::checkout_store');
-$routes->post('/details/(:num)/add-to-chart', 'BarangController::addToChart/$1');
-$routes->get('/chart/delete/(:num)', 'BarangController::deleteChart/$1');
+$routes->get('/', 'c_barang::index');
+$routes->get('/details/(:num)', 'c_barang::details/$1');
+$routes->get('/checkout', 'c_barang::checkout');
+$routes->get('/checkout/success', 'c_barang::checkout_success');
+$routes->post('/checkout/store', 'c_barang::checkout_store');
+$routes->post('/details/(:num)/add-to-chartt', 'c_barang::addToChart/$1');
+$routes->get('/chart/delete/(:num)', 'c_barang::deleteChart/$1');
+
+$routes->get('/login', 'c_login::index');
+$routes->post('/login/process', 'c_login::process');
+$routes->get('/logout', 'c_login::logout');
+
+$routes->get('/nilai', 'c_barang::nilai', ['as' => 'mahasiswa.nilai']);
+$routes->post('/nilai', 'c_barang::nilai', ['as' => 'mahasiswa.nilai']);
+$routes->get('/mahasiswa', 'c_barang::prodi');
 
 /*
  * --------------------------------------------------------------------

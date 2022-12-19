@@ -16,14 +16,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li>
+                        <a class="nav-link" href="<?= base_url(); ?>/logout">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -51,6 +45,8 @@
                                 <a href="/checkout">Checkout</a>
                             </div>
                         </li>
+
+                        <!-- CHART -->
                         <?php foreach ($chart as $item) : ?>
                             <?php if ($item != null) { ?>
                                 <li style="width: 400px;" class="dropdown-item">
